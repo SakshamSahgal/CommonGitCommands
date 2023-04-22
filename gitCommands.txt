@@ -1,0 +1,53 @@
+
+
+//how to initialize a new repo
+
+first create a new repo on github
+
+then do -
+git init                                                 //initialize a new repo        
+now make some files here
+git add .
+git commit -m "msg"
+git remote add origin <remote-url>                      //it publishes the changes to the remote repo [you have to do it first time]
+
+
+Basic Commands
+
+git add .  					                            //add all modification to staging area
+git commit -m "message"                                 //creates a new commit in the repo
+git push origin				                            //upload all branch commits to a remote repository
+
+
+git status    				                            //tells which files are modified in current branch
+git branch    				                            //list all existing branches in the repository and also tells current branch
+git branch <branch name> 	                            //creates a new branch
+git checkout <branch name>	                            //switches branches
+
+to merge - 
+
+git checkout main 			                            //to switch to main 
+git merge <branch name>		                            //to merge the branch into main
+
+
+after that resolve any merge conficts in vs code 
+
+[make sure to do it while on the main branch]
+
+then do - 
+
+git add .
+git commit -m "msg"
+git push origin 
+
+//to push the resolved conflicts to main branch
+
+how to publish newly created branch - 
+
+git branch <new branch name>
+git checkout <new branch name>
+// do some changes now
+
+git add .
+git commit -m "msg"
+git push -u origin <branch name>                        //this publishes the branch to the remote repo
