@@ -9,6 +9,7 @@ git init                                                 //initialize a new repo
 now make some files here
 git add .
 git commit -m "msg"
+git branch -M main                                      //renaming the current branch to main (here -M means move) (original name was master) 
 git remote add origin <remote-url>                      //it publishes the changes to the remote repo [you have to do it first time]
 
 
